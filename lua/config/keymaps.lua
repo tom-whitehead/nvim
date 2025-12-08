@@ -25,3 +25,7 @@ end
 vim.keymap.set('n', '<leader>ut', toggle_theme, { desc = 'Toggle theme (light/dark)' })
 
 vim.keymap.set('n', '<leader>bt', ':BlameToggle<CR>', { silent = true, noremap = true, desc = 'Git [B]lame [T]oggle' })
+
+vim.keymap.set('n', '<leader>gc', function()
+  vim.cmd 'GitBlameOpenCommitURL'
+end, { desc = 'Open [G]itHub [C]ommit' })
