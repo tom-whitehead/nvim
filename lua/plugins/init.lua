@@ -12,8 +12,9 @@ local modules = {
   'plugins.snacks',
   'plugins.dap',
   'plugins.lazydev',
-  -- LSP setup moved to its own folder
   'lsp.core',
+  'plugins.noice',
+  'plugins.no_neck_pain',
 }
 
 local specs = {}

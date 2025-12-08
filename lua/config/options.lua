@@ -42,3 +42,4 @@ vim.o.confirm = true
 
 vim.opt.wrap = false
 
+vim.o.laststatus = 3

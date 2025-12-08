@@ -9,6 +9,8 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = '[E]xpand diagnostic message' })
+
 -- Function to toggle between dark and light themes
 local function toggle_theme()
   local current = vim.g.colors_name
@@ -23,4 +25,3 @@ end
 vim.keymap.set('n', '<leader>ut', toggle_theme, { desc = 'Toggle theme (light/dark)' })
 
 vim.keymap.set('n', '<leader>bt', ':BlameToggle<CR>', { silent = true, noremap = true, desc = 'Git [B]lame [T]oggle' })
-
