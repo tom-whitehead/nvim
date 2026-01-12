@@ -15,6 +15,7 @@ local modules = {
   'lsp.core',
   'plugins.noice',
   'plugins.no_neck_pain',
+  'plugins.copy-reference',
 }
 
 local specs = {}

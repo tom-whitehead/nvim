@@ -1,10 +1,12 @@
 return {
-  'folke/lazydev.nvim',
-  ft = 'lua',
-  opts = {
-    library = {
-      { path = '${3rd}/luv/library', words = { 'vim%.uv' } },
-      vim.fn.expand '~/.hammerspoon/Spoons/EmmyLua.spoon/annotations',
+  {
+    'folke/lazydev.nvim',
+    ft = 'lua',
+    opts = {
+      library = {
+        { path = '${3rd}/luv/library', words = { 'vim%.uv' } },
+        vim.fn.expand '~/.hammerspoon/Spoons/EmmyLua.spoon/annotations',
+      },
     },
   },
 }
