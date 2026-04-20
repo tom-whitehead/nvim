@@ -1,9 +1,13 @@
 return {
-  { 'shortcuts/no-neck-pain.nvim', opts = {
-    buffers = {
-      right = {
-        enabled = false,
+  {
+    'shortcuts/no-neck-pain.nvim',
+    cmd = { 'NoNeckPain', 'NoNeckPainToggle', 'NoNeckPainResize' },
+    opts = {
+      buffers = {
+        right = {
+          enabled = false,
+        },
       },
     },
-  } },
+  },
 }
