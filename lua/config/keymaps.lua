@@ -10,22 +10,3 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = '[E]xpand diagnostic message' })
-
--- Function to toggle between dark and light themes
-local function toggle_theme()
-  local current = vim.g.colors_name
-
-  if string.find(current, 'dark') then
-    vim.cmd.colorscheme 'github_light'
-  else
-    vim.cmd.colorscheme 'github_dark_default'
-  end
-end
-
-vim.keymap.set('n', '<leader>ut', toggle_theme, { desc = 'Toggle theme (light/dark)' })
-
-vim.keymap.set('n', '<leader>bt', ':BlameToggle<CR>', { silent = true, noremap = true, desc = 'Git [B]lame [T]oggle' })
-
-vim.keymap.set('n', '<leader>gc', function()
-  vim.cmd 'GitBlameOpenCommitURL'
-end, { desc = 'Open [G]itHub [C]ommit' })
